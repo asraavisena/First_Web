@@ -1,0 +1,304 @@
+*, * ::before, * ::after {
+	box-sizing: border-box;
+}
+		/* Main */
+
+
+html, body {
+    margin: auto;
+    background-color: #FFF5B0;
+    color: black;
+    font-family: helvetica;
+    background-size: auto;
+}
+
+header {
+	margin-top:auto;
+		/* Location of the image */
+	background-image: url('japan.jpg');  
+		/* Background image is centered vertically and horizontally at all times */
+	background-position: center center;  
+		/* Background image doesn't tile */
+	background-repeat: no-repeat;  
+		/* Background image is fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
+	background-attachment: fixed;  
+		/* This is what makes the background image rescale based on the container's size */
+	background-size: cover;    
+	width: 100%;
+	color: black;
+	height: 450px;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+h1 {
+	padding-top: 7%;
+	font-size: 400%;
+	color: white;
+	font-family: helvetica;
+}
+
+h2 {
+	font-size: 200%;
+	color: white;
+	font-family: helvetica;
+}
+
+img:first-child {
+	z-index: 10000;
+	width:80px;
+	max-width:100%;
+	position: fixed;
+	top: 1%;
+	left: 0;
+	margin-left: 12%;
+	background-color: #ffffff;
+}
+
+		/* Navigation */
+nav {
+    text-align: right;
+    width: 100%;
+    display: block;
+    background-color: #BCB0AD;
+    position: fixed;
+    top: 0px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 1px solid; 
+}
+
+a {
+	text-decoration: none;
+	font-family: helvetica;
+	color: #143468;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+ul {
+    padding: 1%;
+}
+
+.block li {
+    color: white;
+    text-align: center;
+	width:	12em;
+    border: 1px;
+    display : inline;
+    transition-duration: 0.4s;
+	margin:1%;
+}
+
+.block li:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+		/* Inhalt */
+p, section {
+    display: block;
+    padding: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    text-align: center;
+	font-family: helvetica;
+	line-height: 1.5em;
+	letter-spacing: .5px;
+	word-spacing: 1px;
+	color: #143468;
+    
+    
+}
+
+.ueberschrift {
+	font-size: 50px;
+	text-align: center;
+	font-family: helvetica;
+	letter-spacing: 5px;
+	color: #143468;
+}
+
+		/* Footer */
+footer {
+    text-align: center;
+    padding: 1%;
+    background-color: #143468;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+	clear: both;
+	color: #FFF5B0;
+	font-family: helvetica;
+	letter-spacing: 1px;
+
+    bottom:0;
+	width:100%
+}
+
+footer ul li {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+li,small {
+	padding: 1%;
+    display: block;
+}
+
+		/*Über uns*/
+.img {
+    max-width: 300px;
+}
+
+.section > ul li {
+	color: white;
+    text-align: center;
+	width: 12em;
+    border: 1px;
+    display: inline;
+    transition-duration: 0.4s;
+	margin:1%;
+}
+
+		/*Japanische Inseln */
+
+
+
+
+		/*Hilfreiche-Links*/
+div {
+	display: inline-block;
+	width: 30.83%;
+	height: 400px;
+	margin: 5px;
+	border: 5px solid white;
+	overflow: hidden;
+	text-align: center; 
+}
+
+div img {
+   	max-width: 100%;
+   	height: auto;
+}
+
+div h2 {
+   	margin: 0 0 5px;
+}
+
+div p {
+   	font-size: .8em;
+   	line-height: 1.25em;
+   	color: #143468;
+	text-align: justify;
+}
+
+
+.h3css {
+	margin-top: 15px;
+}
+
+.acss {
+	font-size: .8em;
+	font-weight: bold;
+}
+.acss:hover {
+    background-color: white;
+    color: #143468;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+
+
+/*media query*/
+@media only screen and (max-width:800px) {
+	header{
+		background-image:none;
+		color:black;
+		margin:auto;
+		height:300px;
+        
+	}
+    nav {
+
+		width: 100%;
+		display: block;
+		background-color: #BCB0AD;
+		position: absolute;
+		top: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;  
+	}
+	img:first-child {
+		width:  0%;
+		} 
+
+	
+
+	h1 {
+		color:black;
+		padding-top: 30%;
+		font-size: 200%;    
+	}
+	h2 {
+       
+		color:black;
+		font-size: 120%;
+	}
+    
+    
+	.ueberschrift{
+		font-size:30px;
+	}
+
+	p, section {
+		text-align:left;
+		padding-left:5%;
+		padding-right:5%;
+		width:100%;
+	} 
+	
+    div {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		border: 5px solid white;
+		overflow: hidden;
+		text-align: left; 
+		margin-left: 3%;
+	}
+/*footer*/
+	footer{
+		border-top-right-radius:0px;
+		border-top-left-radius: 0px;
+		padding-bottom:1%;
+		padding-top:0;
+	}
+	
+/* über uns*/
+	h3{
+        
+        
+		text-align:center;
+	}
+	.block li{
+        display:block;
+		text-align:center;
+        margin: 0 auto;
+	}
+	.section>p ,	.section{
+		text-align:center;
+	}
+
+/*thema*/
+	section>img{
+		margin-left: auto;
+		margin-right: auto;
+		max-width:100%;
+	}    
+   
+}
